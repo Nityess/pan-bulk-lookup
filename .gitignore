@@ -1,0 +1,24 @@
+# Secrets — never commit real tokens
+.env
+
+# Local Claude Code / editor tooling config (machine-specific)
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller build artifacts (the app is shipped via GitHub Releases, not git)
+build/
+dist/
+*.zip
+
+# Image-generation project output (not part of the PAN app)
+generated_images/
+
+# OS / editor
+Thumbs.db
+.DS_Store
