@@ -468,7 +468,7 @@ class PanLookupApp:
                         body = response.body().decode("utf-8", errors="replace")
                         api_data = json.loads(body)
 
-                        if api_data.get("code") == 1 and api_data.get("data"):
+                        if api_data.get("data"):
                             row = parse_result(api_data["data"])
                             row["Status"] = "Found"
                         else:
